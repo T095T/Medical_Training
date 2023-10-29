@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+ 
+
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="./img/tcms-removebg-preview.png" class="logo" alt="">
+      <h3 class="hide">TCMS</h3>
+    </div>
+    <div class="gap"></div>
+    <div class="sidebar-links">
+      <div class="sidebar-links">
+        <ul>
+          <div class="active-tab"></div>
+          <li class="tooltip-element" data-tooltip="0">
+            <a href="#" class="active" data-active="0">
+              <div class="icon">
+                <i class='bx bx-tachometer'></i>
+                <i class='bx bxs-tachometer'></i>
+              </div>
+              <span class="link hide">Task 1</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="1">
+            <a href="#" data-active="1">
+              <div class="icon">
+                <i class='bx bx-folder'></i>
+                <i class='bx bxs-folder'></i>
+              </div>
+              <span class="link hide">Task 2</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="2">
+            <a href="#" data-active="2">
+              <div class="icon">
+                <i class='bx bx-message-square-detail'></i>
+                <i class='bx bxs-message-square-detail'></i>
+              </div>
+              <span class="link hide">Task 3</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main id ="pdf-content">
+    <h1>Training</h1>
+    <div class="image-container"> 
+    </div>
+    <img src="img/face-1.png" alt="Your Image" width="400" height="300">
+    </div>>
+    <div class="radio-buttons">
+      <input type="radio" name="radioGroup" id="radio1">
+      <label for="radio1">Patient at Baseline.NoGDR</label><br>
+      <input type="radio" name="radioGroup" id="radio2">
+      <label for="radio2">Patient at Baseline. Did GDR</label><br>
+      <input type="radio" name="radioGroup" id="radio3">
+      <label for="radio3">No Pysch Meds</label><br>
+      <input type="radio" name="radioGroup" id="radio4">
+      <label for="radio4">Failed GDR</label><br>
+      <input type="radio" name="radioGroup" id="radio5">
+      <label for="radio5">Patient is unstable. No med changes.</label><br>
+      <input type="radio" name="radioGroup" id="radio6">
+      <label for="radio6">Patient is unstable. Med changes.</label><br>
+    </div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <h2>Plan of Action</h2>
+    <div class="gap2"></div>
+    <div class="additional-info">
+      <div class="input-group">
+        <label for="text1">Continue Meds:</label>
+        <input type="text" id="text1">
+      </div>
+      <div class="input-group">
+        <label for="text2">Discontinue Meds:</label>
+        <input type="text" id="text2">
+      </div>
+      <div class="input-group">
+        <label for="text3">Also Discontinue Meds:</label>
+        <input type="text" id="text3">
+      </div>
+      <div class="input-group">
+        <label for="text4">Start Meds:</label>
+        <input type="text" id="text4">
+      </div>
+      <div class="input-group">
+        <label for="text5">Also Start Meds:</label>
+        <input type="text" id="text5">
+      </div>
+      <div class="input-group">
+        <label for="text6">Increase Meds:</label>
+        <input type="text" id="text6">
+      </div>
+      <div class="input-group">
+        <label for="text7">Also Increase Meds:</label>
+        <input type="text" id="text7">
+      </div>
+      <div class="input-group">
+        <label for="text8">Decrease Meds:</label>
+        <input type="text" id="text8">
+      </div>
+      <div class="input-group">
+        <label for="text9">Also Decrease Meds:</label>
+        <input type="text" id="text9">
+      </div>
+    </div>
+    <button class="save-button" id="save-button">Save</button>
+    <h1 class="text">
+    </h1>
+    <p class="copyright">
+      &copy; 2023 - <span></span> All Rights Reserved.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="/css-sidebar-menu-main/html2pdf/html2pdf.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  
+
+</body>
+
+</html>
